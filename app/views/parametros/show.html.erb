@@ -1,0 +1,26 @@
+<h4> Información de Parámetro</h4>
+<hr>
+<div class="container">
+ <%= link_to 'Regresar', parametros_path,class:"btn btn-info" %>	
+ <p id="notice"><%= notice %></p>
+
+	<form >
+
+	  <div class="form-group col-md-4">
+	    <label >Atributo:</label>
+	    <input type="text" class="form-control" value="<%= @parametro.atributo %>" readonly>
+	  </div>
+
+
+	  <div class="form-group col-md-4">
+	    <label >Descripción:</label>
+	    <input type="text" class="form-control" value="<%= @parametro.descripcion %>" readonly>
+	  </div>
+
+	  <div class="form-group col-md-4">
+	    <label >Estado:</label>
+	    <input type="text" class="form-control" value=" <%= @parametro.estadoParametro %>" readonly>
+	  </div>
+	</form>
+	<%= link_to 'Modificar', edit_parametro_path(@parametro),class:"btn btn-success" %> 
+</div>

@@ -1,0 +1,57 @@
+<%= form_with(model: opcione, local: true) do |form| %>
+  <% if opcione.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(opcione.errors.count, "error") %> prohibited this opcione from being saved:</h2>
+
+      <ul>
+      <% opcione.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :idpadre %>
+    <%= form.number_field :idpadre, id: :opcione_idpadre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :opcion %>
+    <%= form.text_field :opcion, id: :opcione_opcion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :url %>
+    <%= form.text_field :url, id: :opcione_url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :estadoopcion %>
+    <%= form.text_field :estadoopcion, id: :opcione_estadoopcion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :orden %>
+    <%= form.text_field :orden, id: :opcione_orden %>
+  </div>
+
+  <div class="field">
+    <%= form.label :eshoja %>
+    <%= form.check_box :eshoja, id: :opcione_eshoja %>
+  </div>
+
+  <div class="field">
+    <%= form.label :controller %>
+    <%= form.text_field :controller, id: :opcione_controller %>
+  </div>
+
+  <div class="field">
+    <%= form.label :eliminado %>
+    <%= form.number_field :eliminado, id: :opcione_eliminado %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,41 @@
+<h4>Opciones</h4>
+<hr class="division">
+<%= link_to 'Nuevo', new_opcione_path, class:'btn btn-primary btn-sm' %>
+<p id="notice"><%= notice %></p>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Id_Padre</th>
+      <th>Opcion</th>
+      <th>Url</th>
+      <th>Estado</th>
+      <th>Orden</th>
+      <th>Eshoja</th>
+      <th>Controller</th>
+      <th>Eliminado</th>
+     
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @opciones.each do |opcione| %>
+      <tr>
+        <td><%= opcione.id %></td>
+        <td><%= opcione.idpadre %></td>
+        <td><a class="llaves" href="/opciones/<%= opcione.id %>"> <%= opcione.opcion %></a></td>         
+        <td><%= opcione.url %></td>
+        <td><%= opcione.estadoopcion %></td>
+        <td><%= opcione.orden %></td>
+        <td><%= opcione.eshoja %></td>
+        <td><%= opcione.controller %></td>
+        <td><%= opcione.eliminado %></td>
+       
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+

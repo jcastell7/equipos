@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idEntidad: 1
+  idEstadoAnexo: 1
+  eliminado: 1
+
+two:
+  idEntidad: 1
+  idEstadoAnexo: 1
+  eliminado: 1

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Parametroid:</strong>
+  <%= @valor_parametro.parametroId %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @valor_parametro.valor %>
+</p>
+
+<p>
+  <strong>Orden:</strong>
+  <%= @valor_parametro.orden %>
+</p>
+
+<p>
+  <strong>Estadovalorparametro:</strong>
+  <%= @valor_parametro.estadoValorParametro %>
+</p>
+
+<p>
+  <strong>Eliminado:</strong>
+  <%= @valor_parametro.eliminado %>
+</p>
+
+<%= link_to 'Edit', edit_valor_parametro_path(@valor_parametro) %> |
+<%= link_to 'Back', valor_parametros_path %>

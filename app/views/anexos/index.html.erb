@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+<%= link_to 'Nuevo', new_anexo_path,class:'btn btn-primary btn-sm' %>
+<hr>
+<table id="anexos_data" class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>Ver</th>
+      <th>Archivo</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @anexos.each do |anexo| %>
+      <tr>
+        <td><a href="<%= anexo.archivo %>" download>Ver</a></td>
+        <td><%= anexo.archivo %></td>
+        <td><%= anexo.idEstadoAnexo %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<script>
+   jQuery.noConflict();
+   jQuery(document).ready(function(){
+     jQuery('#anexos_data').DataTable();
+
+   });
+</script>

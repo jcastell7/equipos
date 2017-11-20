@@ -1,0 +1,39 @@
+
+<h4>Valor Parametros</h4>
+<hr class="division">
+
+   <%= link_to 'Nuevo', new_valor_parametro_path,class:'btn btn-primary btn-sm' %>
+
+<p id="notice"><%= notice %></p>
+<table id="valor_parametro_data" class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Parametro</th>
+      <th>Valor</th>
+      <th>Orden</th>
+      <th>Estado</th>     
+     
+    </tr>
+  </thead>
+  <tbody>
+    <% @valor_parametros.each do |valor_parametro| %>
+      <tr>
+        <td><%= valor_parametro.id %></td>
+        <td><%= valor_parametro.parametro_id %></td>
+        <td><%= valor_parametro.valor %></td>
+        <td><%= valor_parametro.orden %></td>
+        <td><%= valor_parametro.estadoValorParametro %></td>               
+        </tr>
+    <% end %>
+  </tbody>
+</table>
+
+ <script>
+    jQuery.noConflict();
+    jQuery(document).ready(function(){     
+      jQuery('#valor_parametro_data').DataTable();       
+    });
+  
+</script>
+

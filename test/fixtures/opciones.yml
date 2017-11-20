@@ -1,0 +1,38 @@
+# == Schema Information
+#
+# Table name: opciones
+#
+#  id           :integer          not null, primary key
+#  idpadre      :integer
+#  opcion       :string
+#  url          :string
+#  estadoopcion :string
+#  orden        :string
+#  eshoja       :boolean
+#  controller   :string
+#  eliminado    :integer
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idpadre: 1
+  opcion: MyString
+  url: MyString
+  estadoopcion: MyString
+  orden: MyString
+  eshoja: false
+  controller: MyString
+  eliminado: 1
+
+two:
+  idpadre: 1
+  opcion: MyString
+  url: MyString
+  estadoopcion: MyString
+  orden: MyString
+  eshoja: false
+  controller: MyString
+  eliminado: 1

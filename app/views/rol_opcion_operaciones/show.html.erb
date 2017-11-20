@@ -1,0 +1,27 @@
+<h4>Información de Acceso</h4>
+<hr class="division">
+<%= link_to 'Regresar', rol_opcion_operaciones_path,class:"btn btn-info" %>
+
+<p id="notice"><%= notice %></p>
+<form >
+
+	<div class="form-group col-md-4">
+	  <label>Rol:</label>
+	  <input type="text" class="form-control" value="<%= @reg['rol'] %>" readonly >
+	</div>
+    <div class="form-group col-md-4">
+	  <label>Opcion:</label>
+	  <input type="text" class="form-control" value="<%= @reg['opcion']  %>" readonly >
+	</div>
+	<div class="form-group col-md-4">
+	  <label>Operación:</label>
+	  <input type="text" class="form-control" value="<%= @reg['operacion']  %>" readonly >
+	</div>
+
+	<div class="form-group col-md-4">
+	  <label>Estado:</label>
+	 <input type="text" class="form-control" value="<%= @reg['estado']  %>" readonly >
+	</div>
+</form>
+
+<%= link_to 'Modificar', edit_rol_opcion_operacione_path(@rol_opcion_operacione),class:"btn btn-success" %> 

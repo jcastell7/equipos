@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  placa: MyString
+  modelo: MyString
+  seria: MyString
+  marca: MyString
+  idestadoequipo: 1
+  idtipoequipo: 1
+  idarea: 
+  kilometrajeinicial: 9.99
+  kilometrajeactual: 9.99
+
+two:
+  placa: MyString
+  modelo: MyString
+  seria: MyString
+  marca: MyString
+  idestadoequipo: 1
+  idtipoequipo: 1
+  idarea: 
+  kilometrajeinicial: 9.99
+  kilometrajeactual: 9.99

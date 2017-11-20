@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numfactura: MyString
+  fecha: 2017-11-19 22:31:17
+  concepto: MyText
+  valor: 9.99
+  idestadofactura: 1
+  idproveedor: 1
+  comentariofactura: MyText
+  eliminado: 1
+
+two:
+  numfactura: MyString
+  fecha: 2017-11-19 22:31:17
+  concepto: MyText
+  valor: 9.99
+  idestadofactura: 1
+  idproveedor: 1
+  comentariofactura: MyText
+  eliminado: 1

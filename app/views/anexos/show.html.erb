@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Identidad:</strong>
+  <%= @anexo.idEntidad %>
+</p>
+
+<p>
+  <strong>Idestadoanexo:</strong>
+  <%= @anexo.idEstadoAnexo %>
+</p>
+
+<p>
+  <strong>Eliminado:</strong>
+  <%= @anexo.eliminado %>
+</p>
+
+<%= link_to 'Edit', edit_anexo_path(@anexo) %> |
+<%= link_to 'Back', anexos_path %>

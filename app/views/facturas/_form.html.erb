@@ -1,0 +1,57 @@
+<%= form_with(model: factura, local: true) do |form| %>
+  <% if factura.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(factura.errors.count, "error") %> prohibited this factura from being saved:</h2>
+
+      <ul>
+      <% factura.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :numfactura %>
+    <%= form.text_field :numfactura, id: :factura_numfactura %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fecha %>
+    <%= form.datetime_select :fecha, id: :factura_fecha %>
+  </div>
+
+  <div class="field">
+    <%= form.label :concepto %>
+    <%= form.text_area :concepto, id: :factura_concepto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :valor %>
+    <%= form.text_field :valor, id: :factura_valor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :idestadofactura %>
+    <%= form.number_field :idestadofactura, id: :factura_idestadofactura %>
+  </div>
+
+  <div class="field">
+    <%= form.label :idproveedor %>
+    <%= form.number_field :idproveedor, id: :factura_idproveedor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comentariofactura %>
+    <%= form.text_area :comentariofactura, id: :factura_comentariofactura %>
+  </div>
+
+  <div class="field">
+    <%= form.label :eliminado %>
+    <%= form.number_field :eliminado, id: :factura_eliminado %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,87 @@
+<%= form_with(model: consumo, local: true) do |form| %>
+  <% if consumo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(consumo.errors.count, "error") %> prohibited this consumo from being saved:</h2>
+
+      <ul>
+      <% consumo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :equipo_id %>
+    <%= form.text_field :equipo_id, id: :consumo_equipo_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :persona_id %>
+    <%= form.number_field :persona_id, id: :consumo_persona_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :factura_id,"ID Factura" %>
+    <%= form.number_field :factura_id, id: :consumo_factura_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fecha %>
+    <%= form.datetime_select :fecha, id: :consumo_fecha %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comentario %>
+    <%= form.text_area :comentario, id: :consumo_comentario %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kilometraje %>
+    <%= form.text_field :kilometraje, id: :consumo_kilometraje %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cant %>
+    <%= form.text_field :cant, id: :consumo_cant %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numfactura,"N# Consumo" %>
+    <%= form.text_field :numfactura, id: :consumo_numfactura %>
+  </div>
+
+  <div class="field">
+    <%= form.label :idtipoconsumo %>
+    <%= form.number_field :idtipoconsumo, id: :consumo_idtipoconsumo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :idestadoconsumo %>
+    <%= form.number_field :idestadoconsumo, id: :consumo_idestadoconsumo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :idcategoriaconsumo %>
+    <%= form.number_field :idcategoriaconsumo, id: :consumo_idcategoriaconsumo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :idunidadmedida %>
+    <%= form.number_field :idunidadmedida, id: :consumo_idunidadmedida %>
+  </div>
+
+  <div class="field">
+    <%= form.label :idrubro %>
+    <%= form.number_field :idrubro, id: :consumo_idrubro %>
+  </div>
+
+  <div class="field">
+    <%= form.label :valor %>
+    <%= form.text_field :valor, id: :consumo_valor %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

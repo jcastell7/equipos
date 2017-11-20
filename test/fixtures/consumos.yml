@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  equipo: one
+  persona_id: 1
+  fecha: 2017-11-20 10:51:04
+  comentario: MyText
+  kilometraje: 9.99
+  cant: 9.99
+  numfactura: MyString
+  idtipoconsumo: 1
+  idestadoconsumo: 1
+  idcategoriaconsumo: 1
+  idunidadmedida: 1
+  idrubro: 1
+  valor: 9.99
+  eliminado: 1
+
+two:
+  equipo: two
+  persona_id: 1
+  fecha: 2017-11-20 10:51:04
+  comentario: MyText
+  kilometraje: 9.99
+  cant: 9.99
+  numfactura: MyString
+  idtipoconsumo: 1
+  idestadoconsumo: 1
+  idcategoriaconsumo: 1
+  idunidadmedida: 1
+  idrubro: 1
+  valor: 9.99
+  eliminado: 1

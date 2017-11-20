@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: parametros
+#
+#  id              :integer          not null, primary key
+#  atributo        :string
+#  descripcion     :string
+#  estadoParametro :string
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  atributo: MyString
+  descripcion: MyString
+  estadoParametro: MyString
+
+two:
+  atributo: MyString
+  descripcion: MyString
+  estadoParametro: MyString

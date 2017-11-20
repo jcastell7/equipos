@@ -1,0 +1,28 @@
+# == Schema Information
+#
+# Table name: rol_opcion_operaciones
+#
+#  id          :integer          not null, primary key
+#  idrol       :integer
+#  idoperacion :integer
+#  eliminado   :integer          default(0)
+#  estadorolop :string
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  opcione_id  :integer
+#  usuario_id  :integer
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idrol: 1
+  idoperacion: 1
+  eliminado: 1
+  estadorolop: MyString
+
+two:
+  idrol: 1
+  idoperacion: 1
+  eliminado: 1
+  estadorolop: MyString

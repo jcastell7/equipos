@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Numfactura:</strong>
+  <%= @factura.numfactura %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @factura.fecha %>
+</p>
+
+<p>
+  <strong>Concepto:</strong>
+  <%= @factura.concepto %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @factura.valor %>
+</p>
+
+<p>
+  <strong>Idestadofactura:</strong>
+  <%= @factura.idestadofactura %>
+</p>
+
+<p>
+  <strong>Idproveedor:</strong>
+  <%= @factura.idproveedor %>
+</p>
+
+<p>
+  <strong>Comentariofactura:</strong>
+  <%= @factura.comentariofactura %>
+</p>
+
+<p>
+  <strong>Eliminado:</strong>
+  <%= @factura.eliminado %>
+</p>
+
+<%= link_to 'Edit', edit_factura_path(@factura) %> |
+<%= link_to 'Back', facturas_path %>

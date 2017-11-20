@@ -1,0 +1,43 @@
+<%= form_with(model: valor_parametro, local: true) do |form| %>
+  <% if valor_parametro.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(valor_parametro.errors.count, "error") %> prohibited this valor_parametro from being saved:</h2>
+
+      <ul>
+      <% valor_parametro.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group row col-sm-4">
+    <%= form.label :parametro %>
+    <%= form.number_field :parametro_id, id: :valor_parametro_parametro_id, class:"form-control" %>
+  </div>
+
+  <div class="form-group row col-sm-4">
+    <%= form.label :valor %>
+    <%= form.text_field :valor, id: :valor_parametro_valor, class:"form-control" %>
+  </div>
+
+  <div class="form-group row col-sm-4">
+    <%= form.label :orden %>
+    <%= form.text_field :orden, id: :valor_parametro_orden, class:"form-control" %>
+  </div>
+
+  <div class="form-group row col-sm-4">
+    <%= form.label "Estado" %>
+    <%= form.text_field :estadoValorParametro, id: :valor_parametro_estadoValorParametro, class:"form-control" %>
+  </div>
+
+  <div class="form-group row col-sm-4">
+    <%= form.label :eliminado %>
+    <%= form.number_field :eliminado, id: :valor_parametro_eliminado , class:"form-control"%>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Guardar", :class=>"btn btn-secondary" %>
+    <%= link_to 'Eliminar', valor_parametro, :class => "btn btn-danger", method: :delete, data: { confirm: 'Confirme Eliminación?' } %>
+  </div>
+<% end %>

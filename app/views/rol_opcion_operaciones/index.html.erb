@@ -1,0 +1,34 @@
+
+<h4>Lista de Accesos</h4>
+<hr class="division">
+<%= link_to 'Nuevo', new_rol_opcion_operacione_path,class:'btn btn-primary btn-sm' %>
+<p id="notice"><%= notice %></p>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Rol</th>         
+      <th>Opción</th> 
+      <th>idOpción</th> 
+      <th>Operacion</th>    
+      <th>Estado</th>      
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @regs.each do |reg| %>
+      <tr>
+        <td><a class="llaves" href="/rol_opcion_operaciones/<%= reg['id'] %>"> <%= reg['id'] %></a>    
+        <td><%= reg['rol']       %></td>
+        <td><%= reg['opcion']    %></td>
+        <td><%= reg['idopcion']  %></td>
+        <td><%= reg['operacion'] %></td>       
+        <td><%= reg['estado']    %></td>        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+

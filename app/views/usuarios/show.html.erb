@@ -1,0 +1,32 @@
+<h4> Información de Usuario</h4>
+
+<hr>
+<div class="container">
+ <%= link_to 'Regresar', usuarios_path,class:"btn btn-info" %>	
+ <p id="notice"><%= notice %></p>
+
+<form >
+  <div class="form-group col-md-4">
+    <label>Usuario:</label>
+    <input type="text" class="form-control" value="<%= @usuario.usuario %>" readonly>
+  </div>
+
+	<div class="form-group col-md-4">
+	  <laber>Password:</labels>
+	  <input type="password" class="form-control" value="<%= @usuario.password %>" readonly>
+	</div> 
+
+	<div class="form-group col-md-4">
+	  <label>Rol:</label>
+	  <input type="text" class="form-control" value="<%= @rol %>" readonly>	  
+	</div> 
+
+	<div class="form-group col-md-4">
+	  <label>Estado:</label>
+	  <input type="text" class="form-control" value="<%= @estado %>" readonly>  
+	</div> 
+</form>
+<% if @operaciones.include?("Modificar") %>
+    <%= link_to 'Modificar', edit_usuario_path(@usuario),class:"btn btn-success" %>
+<% end%>
+</div>

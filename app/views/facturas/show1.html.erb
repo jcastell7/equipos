@@ -1,0 +1,53 @@
+<h4> Información de Facturas</h4>
+<hr class="division">
+<div class="container" id="contenido">
+ <%= link_to 'Regresar', facturas_path,class:"btn btn-info" %>
+ <%= link_to 'Modificar', edit_factura_path(@factura),class:"btn btn-success" %>
+ <p id="notice"><%= notice %></p>
+
+ <table  class="table">
+   <thead>
+     <tr>
+       <th>N# Facturas</th>
+       <th>Fecha</th>
+       <th>Concepto</th>
+       <th>Valor</th>
+       <th>Proveedor</th>
+       <th>Comentario</th>
+       <th>Estado</th>
+     </tr>
+   </thead>
+
+   <tbody>
+       <tr>
+         <td><a class="llaves" href="/facturas/<%= @factura.id %>"><%= @factura.id %></a></td>
+         <td><%= @factura.numfactura %></td>
+         <td><%= @factura.fecha %></td>
+         <td><%= @factura.concepto %></td>
+         <td><%= @factura.valor %></td>
+         <td><%= @factura.idproveedor %></td>
+         <td><%= @factura.comentariofactura %></td>
+         <td><%= @factura.idestadofactura %></td>
+       </tr>
+   </tbody>
+ </table>
+ <hr>
+ <ul class="nav nav-tabs">
+   <li class="nav-item" >
+     <a class="nav-link" href="#tab1" data-toggle="tab">Detalle Factura</a>
+   </li>
+   <li class="nav-item">
+     <a  class="nav-link" href="#tab2" data-toggle="tab">Anexo</a>
+   </li>
+ </ul>
+ <div class="tabbable">
+   <div class="tab-content">
+     <div class="tab-pane" id="tab1">
+        <iframe id="consumoTab" src="/consumo/<%= @factura.id %>" frameborder="0" style="border:0;width:100%;height:600px;" scrolling="yes"></iframe>
+     </div>
+     <div class="tab-pane" id="tab2">
+       <iframe id="anexoTab" src="/anexo/<%= @factura.id %>/facturas" frameborder="0" style="border:0;width:100%;height:600px;" scrolling="yes"></iframe>
+       </div>
+     </div>
+   </div>
+ </div>
