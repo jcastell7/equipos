@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Equipos</h1>
-<%= link_to 'Nuevo', new_equipo_path,class:'btn btn-primary btn-sm' %>
-<%= link_to 'Reporte', reporte_path,class:'btn btn-primary btn-sm' %>
+<%= link_to 'Nuevo', new_equipo_path,class:'btn-primary btn-sm' %>
+<%= link_to 'Reporte', reporte_path,class:'btn-primary btn-sm' %>
 <hr>
 
 <table  id="equipos_data" class="table table-striped table-bordered">
@@ -23,7 +23,7 @@
 
   <tbody>
     <% @equipos.each do |equipo| %>
-      <tr>
+      <tr class="active">
         <td><%= link_to "#{equipo.id}", equipo%></td>
         <td><%= equipo.placa %></td>
         <td><%= equipo.modelo %></td>

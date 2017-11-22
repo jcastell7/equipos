@@ -5,7 +5,7 @@
  <%= link_to 'Modificar', edit_factura_path(@factura),class:"btn btn-success" %>
  <p id="notice"><%= notice %></p>
 
- <table  class="table">
+ <table  class="table table table-striped table-bordered">
    <thead>
      <tr>
        <th>N# Facturas</th>
@@ -19,7 +19,7 @@
    </thead>
 
    <tbody>
-       <tr>
+       <tr class="active">
          <td><a class="llaves" href="/facturas/<%= @factura.id %>"><%= @factura.id %></a></td>
          <td><%= @factura.numfactura %></td>
          <td><%= @factura.fecha %></td>

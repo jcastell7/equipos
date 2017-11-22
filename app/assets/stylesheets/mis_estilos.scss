@@ -14,3 +14,21 @@
 label{
 	font-weight:bold;
 }
+
+.enlace{
+ text-decoration: none;
+ color: white;
+}
+.enlace:hover{
+	color:white;
+	text-decoration: none;
+	background-color: rgba(255, 0, 0, 0.1);
+}
+.enlaces{
+ text-decoration: none;
+}
+.enlaces:hover{
+	color:white;
+	text-decoration: none;
+	background-color: #007bff;
+}

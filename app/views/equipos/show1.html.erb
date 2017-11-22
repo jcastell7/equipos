@@ -5,7 +5,7 @@
  <%= link_to 'Modificar', edit_equipo_path(@equipo),class:"btn btn-success" %>
  <p id="notice"><%= notice %></p>
 
- <table  class="table">
+ <table  class="table table table-striped table-bordered">
      <thead>
        <tr>
          <th>Id</th>
@@ -22,7 +22,7 @@
      </thead>
 
      <tbody>
-         <tr>
+         <tr class="active">
            <td><%= @equipo.id %></td>
            <td><%= @equipo.placa %></td>
            <td><%= @equipo.modelo %></td>

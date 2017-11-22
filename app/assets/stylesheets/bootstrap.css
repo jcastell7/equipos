@@ -1988,13 +1988,13 @@ fieldset[disabled] a.btn {
 }
 
 .btn-primary {
-  color: #fff;
+  color: white;
   background-color: #007bff;
   border-color: #007bff;
 }
 
 .btn-primary:hover {
-  color: #fff;
+  color: white;
   background-color: #0069d9;
   border-color: #0062cc;
 }
@@ -2013,6 +2013,7 @@ fieldset[disabled] a.btn {
   background-color: #0069d9;
   background-image: none;
   border-color: #0062cc;
+  color: white;
 }
 
 .btn-secondary {
@@ -2072,7 +2073,7 @@ fieldset[disabled] a.btn {
 }
 
 .btn-info {
-  color: #fff;
+  color: white;
   background-color: #17a2b8;
   border-color: #17a2b8;
 }
@@ -2097,6 +2098,7 @@ fieldset[disabled] a.btn {
   background-color: #138496;
   background-image: none;
   border-color: #117a8b;
+  color: white;
 }
 
 .btn-warning {
@@ -3165,6 +3167,7 @@ tbody.collapse.show {
 
 .nav-link:focus, .nav-link:hover {
   text-decoration: none;
+  color: white;
 }
 
 .nav-link.disabled {

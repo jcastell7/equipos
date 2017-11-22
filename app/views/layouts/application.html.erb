@@ -42,7 +42,7 @@
                 <div class="card mt-5">
                   <div class="card-header" role="tab" id="headingOne">
                     <h5 class="mb-0">
-                      <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="enlaces">
                         Básicas
                       </a>
                     </h5>
@@ -51,14 +51,14 @@
                   <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                        <ul class="nav flex-column">
-                       <li class="nav-item">
+                           <li class="nav-item" >
                          <!-- para colocarle estilos a los form de rails despues del path de la ruta
                                le pasamos un hash que es opcional y dentro del hash podemos definirle
-                             id:"tal cosa" class:"nav-link" y todo lo que uno quiera-->
-                            <%= link_to 'Facturas',facturas_path,{class:"nav-link"} %>
+                             id:"tal cosa" class:"enlaces" y todo lo que uno quiera-->
+                            <%= link_to 'Facturas',facturas_path,{class:"enlaces"} %>
                         </li>
-                        <li class="nav-item">
-                             <%= link_to 'Equipos',equipos_path,{class:"nav-link"} %>
+                        <li class="nav-item" >
+                             <%= link_to 'Equipos',equipos_path,{class:"enlaces"} %>
                         </li>
 
                       </ul>
@@ -68,7 +68,7 @@
               <div class="card">
                 <div class="card-header" role="tab" id="headingTwo">
                   <h5 class="mb-0">
-                    <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <a class="collapsed enlaces" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                       Definir
                     </a>
                   </h5>
@@ -82,7 +82,7 @@
             <div class="card">
               <div class="card-header" role="tab" id="headingThree">
                 <h5 class="mb-0">
-                  <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <a class="collapsed enlaces" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     Configurar
                   </a>
                 </h5>
@@ -91,16 +91,16 @@
             <div class="card-body">
               <ul class="nav d-flex flex-column">
                <li>
-                 <%= link_to 'Usuarios',usuarios_path %>
+                 <%= link_to 'Usuarios',usuarios_path, {class:"enlaces"}  %>
                 </li>
                 <li class="nav-item">
-                     <%= link_to 'Parametros',parametros_path %>
+                     <%= link_to 'Parametros',parametros_path, {class:"enlaces"} %>
                 </li>
                 <li class="nav-item">
-                     <%= link_to 'Opciones',opciones_path %>
+                     <%= link_to 'Opciones',opciones_path, {class:"enlaces"} %>
                 </li>
                 <li class="nav-item">
-                     <%= link_to 'Accesos',rol_opcion_operaciones_path %>
+                     <%= link_to 'Accesos',rol_opcion_operaciones_path, {class:"enlaces"} %>
                 </li>
               </ul>
             </div>
